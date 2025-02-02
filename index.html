@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TharanissPotfolio</title>
+    <title>Tharaniss Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./assets/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header class="header">
+        <nav class="nav-grid">
+            <div class="nav-logo">
+                <a href="#">Tharaniss!</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about-me">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <section class="banner" id="home">
+        <div class="my-name">
+            <h2>HI! MY NAME IS THARANEESH J.</h2>
+            <h3><a
+                    href="https://www.google.com/maps/place/Kongunadu+College+of+Engineering+and+Technology/@11.0149815,78.295393,905m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3baaf5b7515b26d3:0xe23944ddca3a0296!8m2!3d11.0149762!4d78.2979733!16s%2Fg%2F1thk_8vm?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D">I
+                    AM A STUDENT OF KONGUNADU COLLEGE OF ENGINEERING AND TECHNOLOGY TRICHY</a></h3>
+            <h3>PYTHON-JAVA-HTML-CSS-JAVASCRIPT-GITHUB</h3>
+            <a href="https://wa.me/+917395936932?text=Hi Brototype !!!">
+                <button type="button" class="btn-cnt">Connect Me!</button>
+            </a>
+        </div>
+    </section>
+
+    <!--About Me-->
+    <section class="container" id="about-me">
+        <div class="main-about">
+            <div class="about-para" data-aos="zoom-in-up">
+                <h3>About Me</h3>
+                <p>I am Tharaneesh, a passionate web developer and video editor eager to create visually appealing and
+                    functional digital experiences. Currently, I am learning HTML, CSS, and JavaScript to build
+                    responsive
+                    websites and enhance my skills in frontend and backend development. Alongside coding, I have
+                    experience in
+                    Adobe After Effects and Photoshop, where I design engaging visual content.</p>
+                <p>I love blending creativity with technology and constantly seek new challenges to grow and improve my
+                    skills.
+                </p>
+            </div>
+            <div class="img-jpg" data-aos="zoom-in-up">
+                <img src="./img/profile-img.jpg" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container" id="skills" data-aos="zoom-in-up">
+        <div class="skills-container">
+            <h2 class="skills-title">Progressive</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-text">Python</span>
+                        <span class="percentage">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress python"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-text">Java</span>
+                        <span class="percentage">40%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress java"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-text">HTML</span>
+                        <span class="percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress html"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-text">CSS</span>
+                        <span class="percentage">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress css"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-text">JavaScript</span>
+                        <span class="percentage">50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress javascript"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container" id="contact">
+        <div class="main-contact">
+            <!-- Add your contact content here -->
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
