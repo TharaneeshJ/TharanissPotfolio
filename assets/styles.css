@@ -151,7 +151,7 @@ body {
 
 .my-name h2 {
   font-weight: 600;
-  font-size: clamp(1.5rem, 0.923rem + 2.308vw, 3rem);
+  font-size: clamp(1.5rem, 0.723rem + 2.108vw, 3rem);
   line-height: 1.6;
   margin: 0 0 0 0;
 }
@@ -411,6 +411,10 @@ ul {
 
 @media screen and (max-width: 767px) {
   .main-contact{
-    margin:auto;
+    max-width: 100%;
+    padding-right: 2rem;
+  }
+  .copyright p{
+    font-size: 8px;
   }
 }
