@@ -1,1 +1,84 @@
-Array
+import java.util.Scanner;
+
+public class ArrayManipulation {
+    
+    // Method to calculate sum of array elements
+    public static int sum(int[] arr) {
+        int total = 0;
+        for (int i = 0; i < arr.length; i++) { // Traditional for loop
+            total += arr[i];
+        }
+        return total;
+    }
+
+    // Method to search for an element in the array
+    public static boolean search(int[] arr, int key) {
+        for (int i = 0; i < arr.length; i++) { // Traditional for loop
+            if (arr[i] == key) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // Method to find the maximum element in the array
+    public static int maximum(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) { // Traditional for loop
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Input array size
+        System.out.print("Enter the number of elements in the array: ");
+        int size = scanner.nextInt();
+        int[] arr = new int[size];
+
+        // Input array elements
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < size; i++) { // Traditional for loop
+            arr[i] = scanner.nextInt();
+        }
+
+        // Menu for user to choose an operation
+        while (true) {
+            System.out.println("\nChoose an operation:");
+            System.out.println("1. Sum of elements");
+            System.out.println("2. Search an element");
+            System.out.println("3. Maximum element");
+            System.out.println("4. Exit");
+            System.out.print("Enter your choice: ");
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.println("Sum of elements: " + sum(arr));
+                    break;
+                case 2:
+                    System.out.print("Enter the element to search: ");
+                    int key = scanner.nextInt();
+                    if (search(arr, key)) {
+                        System.out.println(key + " is present in the array.");
+                    } else {
+                        System.out.println(key + " is not found in the array.");
+                    }
+                    break;
+                case 3:
+                    System.out.println("Maximum element in the array: " + maximum(arr));
+                    break;
+                case 4:
+                    System.out.println("Exiting program...");
+                    scanner.close();
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid choice! Please enter a number between 1 and 4.");
+            }
+        }
+    }
+}
